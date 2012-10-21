@@ -114,7 +114,7 @@ int main (void)
 }
 ```
 
-![1](https://github.com/linzhonghong/fix_zguide-cn/tree/master/images/chapter1_1.png)
+![my images][1](https://github.com/linzhonghong/fix_zguide-cn/tree/master/images/chapter1_1.png)
 
 使用REQ-REP套接字发送和接受消息是需要遵循一定规律的。客户端首先使用zmq_send()发送消息，再用zmq_recv()接收，如此循环。如果打乱了这个顺序（如连续发送两次）则会报错。类似地，服务端必须先进行接收，后进行发送。
 
